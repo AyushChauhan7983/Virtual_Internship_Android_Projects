@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="58sp"
+            android:src="@drawable/round_store_black_18" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:layout_marginStart="20dp"
+            android:hint="@string/cost_of_service"
+            android:autofillHints="phone"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/round_room_service_black_18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_was_the_service"
+            android:textSize="15sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/option_twenty_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:text="@string/amazing_20"/>
+
+        <RadioButton
+            android:id="@+id/option_eighteen_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:text="@string/good_18"/>
+
+        <RadioButton
+            android:id="@+id/option_fifteen_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70dp"
+            android:text="@string/ok_15"/>
+
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/tip_switch"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:checked="true"
+        android:text="@string/round_up_tip"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculate"
+        android:textSize="20sp"/>
+
+       <TextView
+           android:id="@+id/tip_result"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/tip_amt_0"
+           android:layout_marginStart="80dp"
+           android:layout_marginTop="20dp"
+           android:textSize="20sp"/>
+
+
+</LinearLayout>
